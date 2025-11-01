@@ -1,154 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promo page</title>
-    <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
- <link rel="icon" href="iconesite.png" style="width: 100px; height: 100px;">
- <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Promotions - Special Offers</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="iconesite.png">
+  <link rel="stylesheet" href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css">
+  <meta name="description" content="Limited-time Apple promotions and special offers on iPhone, Mac, iPad, and more.">
+  <meta name="robots" content="index, follow">
 </head>
-<aside>
-  <i onclick="close5()" class="fa-solid fa-xmark close "></i>
-    <a href="home.html"><i id="aplside" class="fa-brands fa-apple "></i></a>
-    <a class="icoside" href="home.html"><i class="fa-solid fa-house-chimney sideclo"></i>   HOME</a>
-   <a href="shope.html"><i class="fa-solid fa-shop sideclo "></i>   SHOPE</a> 
-   <a  href="promo.html"><i class="fa-sharp fa-solid fa-receipt sideclo"></i>   PROMO</a> 
-</aside>
 <body>
-  <marquee id="go-up" class="title" scrollamount="10" behavior="">
-    <font>Promo</font>
-  </marquee>
-    <br><br>
-    <div class="divpromo">
-      <a class="godawn" href="#go-dawn">GO DAWN <i class="fa-solid fa-arrow-right arraw"></i> </a> </a>
-</div>
-            <div class="slider">
-    <input type="radio" name="slired" id="slide1" class="slider_nav" checked>
-    <input type="radio" name="slired" id="slide2" class="slider_nav" checked>
-    <input type="radio" name="slired" id="slide3" class="slider_nav" checked>
-    <input type="radio" name="slired" id="slide4" class="slider_nav" checked>
-    <input type="radio" name="slired" id="slide5" class="slider_nav" checked>
-  
-  <div class="slider_inner">
-    <img src="apple pc 4.jpg" alt="apple 1" class="img_content">
-    <img src="apple pc 1.jpg" alt="apple 2" class="img_content">
-    <img src="apple pc 3.jpg" alt="apple 3" class="img_content">
-    <img src="apple pc 2.jpg" alt="apple 4" class="img_content">
-    <img src="applepc 5.jpg" alt="apple 5" class="img_content">
+  <!-- Sidebar -->
+  <aside>
+    <i onclick="close5()" class="fa-solid fa-xmark close"></i>
+    <a href="home.html"><i class="fa-brands fa-apple aplside"></i></a>
+    <a class="icoside" href="home.html"><i class="fa-solid fa-house-chimney sideclo"></i> HOME</a>
+    <a class="icoside" href="shope.html"><i class="fa-solid fa-shop sideclo"></i> SHOP</a>
+    <a class="icoside" href="promo.html"><i class="fa-solid fa-receipt sideclo"></i> PROMO</a>
+  </aside>
+
+  <!-- Go up button -->
+  <a href="#go-up" class="goup"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <!-- Hero -->
+  <section id="go-up" class="promo-hero">
+    <div class="hero-content">
+      <h1 class="hero-title fade-in">Special Offers</h1>
+      <p class="hero-subtitle fade-in-delay">Incredible deals on the products you love</p>
     </div>
-  </div
+    <div class="hero-overlay"></div>
+  </section>
 
-<br><br>
-<div id="colorPallete">
-  <img src="color-change.png" alt="">
-  <div id="colorsContent">
-    <a onclick="vert()">Green</a>
-    <a onclick="Blue()">Blue</a>
-    <a onclick="Red()">Red </a>
-    <a onclick="Orange()">Orange</a>
-  </div>
- </div>
-
-    <ul class="ul">
-        <button class="aplogo"><i class="fa-brands fa-apple"></i></button>
-        <a href="home.html"><li><i class="fa-solid fa-house-chimney"></i> HOME</li></a>
-       <a href="shope.html"><li><i class="fa-solid fa-shop"></i>  SHOPE</li></a> 
-       <a class="active" href="promo.html"><li><i class="fa-sharp fa-solid fa-receipt"></i>  PROMO</li></a>
-       <i onclick="open5()" class="fa-solid fa-bars hum"></i>
-    </ul>
-    <br><br><br>
-    <div id="colorPP">
-           <marquee class="colorP" behavior="scroll" direction="down">
-           <center>
-            <h3 class="d22k">20 200,00 DH</h3>
-       <del><h3 class="d21k">21 500,00 DH</h3></del>
-           </center> 
-        </marquee>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo"><i class="fa-brands fa-apple"></i></a>
+      <ul class="nav-menu">
+        <li><a class="nav-link" href="home.html">Home</a></li>
+        <li><a class="nav-link" href="shope.html">Shop</a></li>
+        <li><a class="nav-link active" href="promo.html">Promo</a></li>
+        <li><a class="nav-link" href="home.html#products">Products</a></li>
+      </ul>
+      <div class="nav-icons">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+        <i onclick="open5()" class="fa-solid fa-bars hamburger"></i>
+      </div>
     </div>
-      
-<br><br><br>
-        
-<div id="divpromo">
-  <div class="macpro" ><img src="macpro.jpg" width="100%" alt=""></div>
-  <div>
-      <p class="Pmac" >Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    Expedita voluptatibus <b>voluptates facilis totam</b> odit non ratione 
-    architecto temporibus hic perferendis. Lorem ipsum dolor sit amet, consectetur 
-    adipisicing <b>elit. Atque</b> , adipisci quae corrupti amet delectus dicta? Dicta 
-    tempora necessitatibus illum molestiae ab <b>nulla! Totam beatae</b>  nemo sunt 
-    consequuntur sit <b>provident magnam?</b>  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-    <b>Dolorem fugit</b> , quam maiores odit unde suscipit qui, <b>perferendis impedit</b>  facere eligendi debitis 
-    cupiditate tenetur. Obcaecati aut, suscipit soluta rem possimus expedita!</p>
-  </div>
-    
-</div>
+  </nav>
 
+  <!-- Featured Deal -->
+  <section class="featured-deal">
+    <div class="container">
+      <div class="deal-content">
+        <div class="deal-image">
+          <img src="macpro.jpg" alt="MacBook Pro">
+          <div class="deal-badge"><span class="discount">-30%</span></div>
+        </div>
+        <div class="deal-info">
+          <span class="deal-tag">Deal of the Week</span>
+          <h2>MacBook Pro 14"</h2>
+          <p class="deal-description">Experience extraordinary performance with the M3 Pro chip. Perfect for professionals and creators who demand the best.</p>
+          <div class="deal-features">
+            <div class="feature-item"><i class="fa-solid fa-microchip"></i><span>M3 Pro Chip</span></div>
+            <div class="feature-item"><i class="fa-solid fa-display"></i><span>14" Liquid Retina XDR</span></div>
+            <div class="feature-item"><i class="fa-solid fa-battery-full"></i><span>18 Hours Battery</span></div>
+            <div class="feature-item"><i class="fa-solid fa-memory"></i><span>16GB Unified Memory</span></div>
+          </div>
+          <div class="deal-pricing">
+            <div class="price-box">
+              <span class="old-price">41,499 DH</span>
+              <span class="new-price">28,999 DH</span>
+            </div>
+            <button class="btn-buy-now"><i class="fa-solid fa-bolt"></i> Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<svg width="100%" height="100%" id="svg" viewBox="0 0 1440 390" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><style>
-          .path-0{
-            animation:pathAnim-0 4s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-          }
-          @keyframes pathAnim-0{
-            0%{
-              d: path("M 0,400 L 0,150 C 120.57142857142858,164.92857142857144 241.14285714285717,179.85714285714286 345,178 C 448.85714285714283,176.14285714285714 535.9999999999999,157.5 658,145 C 780.0000000000001,132.5 936.8571428571429,126.14285714285714 1073,128 C 1209.142857142857,129.85714285714286 1324.5714285714284,139.92857142857144 1440,150 L 1440,400 L 0,400 Z");
-            }
-            25%{
-              d: path("M 0,400 L 0,150 C 134.67857142857142,124.07142857142857 269.35714285714283,98.14285714285714 383,101 C 496.64285714285717,103.85714285714286 589.2500000000001,135.5 704,151 C 818.7499999999999,166.5 955.6428571428571,165.85714285714286 1082,163 C 1208.357142857143,160.14285714285714 1324.1785714285716,155.07142857142856 1440,150 L 1440,400 L 0,400 Z");
-            }
-            50%{
-              d: path("M 0,400 L 0,150 C 140.03571428571428,149.25 280.07142857142856,148.5 386,132 C 491.92857142857144,115.5 563.75,83.24999999999999 680,84 C 796.25,84.75000000000001 956.9285714285713,118.5 1091,135 C 1225.0714285714287,151.5 1332.5357142857142,150.75 1440,150 L 1440,400 L 0,400 Z");
-            }
-            75%{
-              d: path("M 0,400 L 0,150 C 109.5,178.60714285714286 219,207.21428571428572 345,189 C 471,170.78571428571428 613.4999999999999,105.75 749,84 C 884.5000000000001,62.25 1013,83.78571428571429 1127,102 C 1241,120.21428571428571 1340.5,135.10714285714286 1440,150 L 1440,400 L 0,400 Z");
-            }
-            100%{
-              d: path("M 0,400 L 0,150 C 120.57142857142858,164.92857142857144 241.14285714285717,179.85714285714286 345,178 C 448.85714285714283,176.14285714285714 535.9999999999999,157.5 658,145 C 780.0000000000001,132.5 936.8571428571429,126.14285714285714 1073,128 C 1209.142857142857,129.85714285714286 1324.5714285714284,139.92857142857144 1440,150 L 1440,400 L 0,400 Z");
-            }
-          }</style><defs><linearGradient id="gradient" x1="51%" y1="0%" x2="49%" y2="100%"><stop offset="5%" stop-color="#9C27B0  "></stop><stop offset="95%" stop-color="#000000"></stop></linearGradient></defs><path d="M 0,400 L 0,150 C 120.57142857142858,164.92857142857144 241.14285714285717,179.85714285714286 345,178 C 448.85714285714283,176.14285714285714 535.9999999999999,157.5 658,145 C 780.0000000000001,132.5 936.8571428571429,126.14285714285714 1073,128 C 1209.142857142857,129.85714285714286 1324.5714285714284,139.92857142857144 1440,150 L 1440,400 L 0,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-0"></path></svg>
+  <!-- Promotions Grid -->
+  <section class="promo-section" id="go-dawn">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">This Week’s Promotions</h2>
+        <p class="section-subtitle">Limited time offers - don't miss out!</p>
+      </div>
+      <div class="promo-grid">
+        <!-- iPhone 16 -->
+        <div class="promo-card">
+          <div class="promo-badge hot">HOT DEAL</div>
+          <div class="promo-image">
+            <img src="iphone16.jpg" alt="iPhone 16 Pro">
+          </div>
+          <div class="promo-info">
+            <h3>iPhone 16 Pro</h3>
+            <p>Titanium design with the powerful A18 Pro chip</p>
+            <div class="promo-price">
+              <span class="discount-percent">-6%</span>
+              <div class="prices">
+                <span class="price-new">20,200 DH</span>
+                <span class="price-old">21,500 DH</span>
+              </div>
+            </div>
+            <button class="btn-promo">Shop Now</button>
+          </div>
+        </div>
 
-  <a href="#go-up" class="goup"><i class="fa-thin fa-circle-arrow-up"></i></a>
-  <!-- From Uiverse.io by svqantonio --> 
-<div class="main">
-  <h1 class="title-fot">follow us on </h1>
-  <div class="up">
-    <button class="card1">
-      <svg class="instagram" fill-rule="nonzero" height="30px" width="30px" viewBox="0,0,256,256" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g style="mix-blend-mode: normal" text-anchor="none" font-size="none" font-weight="none" font-family="none" stroke-dashoffset="0" stroke-dasharray="" stroke-miterlimit="10" stroke-linejoin="miter" stroke-linecap="butt" stroke-width="1" stroke="none" fill-rule="nonzero"><g transform="scale(8,8)"><path d="M11.46875,5c-3.55078,0 -6.46875,2.91406 -6.46875,6.46875v9.0625c0,3.55078 2.91406,6.46875 6.46875,6.46875h9.0625c3.55078,0 6.46875,-2.91406 6.46875,-6.46875v-9.0625c0,-3.55078 -2.91406,-6.46875 -6.46875,-6.46875zM11.46875,7h9.0625c2.47266,0 4.46875,1.99609 4.46875,4.46875v9.0625c0,2.47266 -1.99609,4.46875 -4.46875,4.46875h-9.0625c-2.47266,0 -4.46875,-1.99609 -4.46875,-4.46875v-9.0625c0,-2.47266 1.99609,-4.46875 4.46875,-4.46875zM21.90625,9.1875c-0.50391,0 -0.90625,0.40234 -0.90625,0.90625c0,0.50391 0.40234,0.90625 0.90625,0.90625c0.50391,0 0.90625,-0.40234 0.90625,-0.90625c0,-0.50391 -0.40234,-0.90625 -0.90625,-0.90625zM16,10c-3.30078,0 -6,2.69922 -6,6c0,3.30078 2.69922,6 6,6c3.30078,0 6,-2.69922 6,-6c0,-3.30078 -2.69922,-6 -6,-6zM16,12c2.22266,0 4,1.77734 4,4c0,2.22266 -1.77734,4 -4,4c-2.22266,0 -4,-1.77734 -4,-4c0,-2.22266 1.77734,-4 4,-4z"></path></g></g></svg>
-    </button>
-    <button class="card11">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="LinkedIn" viewBox="0 0 24 24" fill="none">
-  <rect width="24" height="24" rx="4" />
-  <path fill="white" d="M6.75 8.5H4V19h2.75V8.5ZM5.375 3.5a1.625 1.625 0 1 0 0 3.25 1.625 1.625 0 0 0 0-3.25ZM20 12.418V19h-2.75v-5.4c0-1.286-.472-2.168-1.668-2.168-.91 0-1.452.62-1.69 1.217-.087.21-.112.5-.112.79V19H11V8.5h2.75v1.25c.368-.57 1.045-1.37 2.533-1.37 1.854 0 3.217 1.21 3.217 4.038Z"/>
-</svg>
-    </button>
-    <button class="card2">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="facebook" width="24">
-        <path d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"></path>
-      </svg>
-    </button>
-  </div>
-  <div class="down">
-    <button class="card3">
-      <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="whatsapp">
-        <path d="M19.001 4.908A9.817 9.817 0 0 0 11.992 2C6.534 2 2.085 6.448 2.08 11.908c0 1.748.458 3.45 1.321 4.956L2 22l5.255-1.377a9.916 9.916 0 0 0 4.737 1.206h.005c5.46 0 9.908-4.448 9.913-9.913A9.872 9.872 0 0 0 19 4.908h.001ZM11.992 20.15A8.216 8.216 0 0 1 7.797 19l-.3-.18-3.117.818.833-3.041-.196-.314a8.2 8.2 0 0 1-1.258-4.381c0-4.533 3.696-8.23 8.239-8.23a8.2 8.2 0 0 1 5.825 2.413 8.196 8.196 0 0 1 2.41 5.825c-.006 4.55-3.702 8.24-8.24 8.24Zm4.52-6.167c-.247-.124-1.463-.723-1.692-.808-.228-.08-.394-.123-.556.124-.166.246-.641.808-.784.969-.143.166-.29.185-.537.062-.247-.125-1.045-.385-1.99-1.23-.738-.657-1.232-1.47-1.38-1.716-.142-.247-.013-.38.11-.504.11-.11.247-.29.37-.432.126-.143.167-.248.248-.413.082-.167.043-.31-.018-.433-.063-.124-.557-1.345-.765-1.838-.2-.486-.404-.419-.557-.425-.142-.009-.309-.009-.475-.009a.911.911 0 0 0-.661.31c-.228.247-.864.845-.864 2.067 0 1.22.888 2.395 1.013 2.56.122.167 1.742 2.666 4.229 3.74.587.257 1.05.408 1.41.523.595.19 1.13.162 1.558.1.475-.072 1.464-.6 1.673-1.178.205-.58.205-1.075.142-1.18-.061-.104-.227-.165-.475-.29Z"></path>
-      </svg>
-    </button>
-    <button class="card4">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="24" class="gmail" width="24">
-        <path d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"></path>
-      </svg>
-    </button>
-        <button class="card5">
-   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="youtube" fill="none" >
-  <path fill="red" d="M23.498 6.186a2.91 2.91 0 0 0-2.048-2.06C19.18 3.5 12 3.5 12 3.5s-7.18 0-9.45.626a2.91 2.91 0 0 0-2.048 2.06C0 8.492 0 12 0 12s0 3.508.502 5.814a2.91 2.91 0 0 0 2.048 2.06C4.82 20.5 12 20.5 12 20.5s7.18 0 9.45-.626a2.91 2.91 0 0 0 2.048-2.06C24 15.508 24 12 24 12s0-3.508-.502-5.814ZM9.75 15.5v-7l6.5 3.5-6.5 3.5Z"/>
-</svg>
-    </button>
-  </div>
-</div>
-    <footer id="go-dawn">copyright © 2024</footer>  
-    <script src="script.js"></script>
+        <!-- iPhone 14 -->
+        <div class="promo-card">
+          <div class="promo-badge">SAVE 10%</div>
+          <div class="promo-image">
+            <img src="iphone14.jpeg" alt="iPhone 14">
+          </div>
+          <div class="promo-info">
+            <h3>iPhone 14</h3>
+            <p>Advanced dual-camera system & all-day battery</p>
+            <div class="promo-price">
+              <span class="discount-percent">-10%</span>
+              <div class="prices">
+                <span class="price-new">17,999 DH</span>
+                <span class="price-old">19,999 DH</span>
+              </div>
+            </div>
+            <button class="btn-promo">Shop Now</button>
+          </div>
+        </div>
+
+        <!-- Gaming Laptop -->
+        <div class="promo-card">
+          <div class="promo-badge gaming">GAMING BEAST</div>
+          <div class="promo-image">
+            <img src="PCportable.jpg" alt="Gaming Laptop">
+          </div>
+          <div class="promo-info">
+            <h3>MSI GE77 Gaming</h3>
+            <p>Intel i9 & NVIDIA RTX 4080 for ultimate performance</p>
+            <div class="promo-price">
+              <span class="discount-percent">-8%</span>
+              <div class="prices">
+                <span class="price-new">32,999 DH</span>
+                <span class="price-old">35,999 DH</span>
+              </div>
+            </div>
+            <button class="btn-promo">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter-section">
+    <div class="container">
+      <div class="newsletter-content">
+        <div class="newsletter-text">
+          <h2>Never Miss a Deal</h2>
+          <p>Subscribe to get exclusive offers and early access to our promotions</p>
+        </div>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn-subscribe"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="modern-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Shop and Learn</h4>
+          <ul>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">AirPods</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">Apple TV+</a></li>
+            <li><a href="#">iCloud</a></li>
+            <li><a href="#">Apple Arcade</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Account</h4>
+          <ul>
+            <li><a href="#">Manage Your Apple ID</a></li>
+            <li><a href="#">Apple Store Account</a></li>
+            <li><a href="#">iCloud.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/Apple" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/apple" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com/Apple" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@Apple" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/company/apple" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Sales Policy</a>
+          <a href="#">Site Map</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
