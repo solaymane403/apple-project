@@ -2,12 +2,5 @@
   command = "npm run build"
   publish = "dist"
 
-[context.production.environment]
-  # Example: specify node version if needed
-  # NODE_VERSION = "18"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  force = true
+# Minimal Netlify configuration. If you need environment variables or redirects,
+# add them back carefully (no trailing commas, use proper TOML syntax).
